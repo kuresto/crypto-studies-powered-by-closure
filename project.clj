@@ -7,4 +7,5 @@
   :main ^:skip-aot crypto-studies-powered-by-closure.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all
-                       :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}})
+                       :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}
+             :dev {:dependencies [[com.billpiel/sayid "0.1.0"]]}})
